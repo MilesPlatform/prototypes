@@ -1,4 +1,7 @@
 Dashboard::Application.routes.draw do
+  resources :endpoints
+  match 'endpoints/:id/temp' => 'endpoint#temp'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
